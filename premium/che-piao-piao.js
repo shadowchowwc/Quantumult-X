@@ -2,6 +2,8 @@
 
 # > 车票票
 
+https://apps.apple.com/cn/app/id6446212291
+
 [rewrite_local]
 
 # ～ RevenueCat@ddgksf2013
