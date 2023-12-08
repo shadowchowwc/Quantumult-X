@@ -20,8 +20,7 @@ var shadow={"is_sandbox":false,"ownership_type":"PURCHASED","billing_issues_dete
 var shadow={"grace_period_expires_date":null,"purchase_date":"2022-09-08T01:04:17Z","product_identifier":"shadow_1y_128","expires_date":"2099-12-18T01:04:17Z"};
 var obj = JSON.parse(JSON.stringify(cuttlefish));shadow['product_identifier']="com.shadow.premium.yearly";obj['subscriber']['subscriptions']['com.shadow.premium.yearly']=shadow;
 
-if(ua.indexOf('%E8%BD%A6%E7%A5%A8%E7%A5%A8') != -1) {obj['subscriber']['entitlements']['vip+watch_vip']=shadow;}
-else if(ua.indexOf('ScannerPro') != -1) {obj['subscriber']['entitlements']['plus']=shadow;}
+if(ua.indexOf('ScannerPro') != -1) {obj['subscriber']['entitlements']['plus']=shadow;}
 else{
   obj['subscriber']['entitlements']['pro']=shadow;
 }
